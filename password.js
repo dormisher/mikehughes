@@ -15,6 +15,15 @@ function hashUrls() {
 };
 
 $(function () {
+	$.ajax({
+		type: 'GET',
+		url: 'https://raw.github.com/dormisher/mikehughes/master/overlay.html',
+		async: true,
+		success: function (html) {
+			$('body').append(html);
+		}
+	});
+
 	$('#enterPassword').click(function () {
 		if ($('#password').val() == 'panther') {
 			location.hash = key;
