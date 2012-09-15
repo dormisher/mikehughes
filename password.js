@@ -1,5 +1,5 @@
 
-var content = "<style>input#password { padding: 5px 10px; width: 160px; font-size: 14px !important; border:1px solid #000; margin-top:20px; }p#incorrectMsg { display: none; font-size: 16px; color: red; margin: 10px 0; text-transform:lowercase; }div#overlay { position: absolute; top: 0; left: 0; height: 100%; width: 100%; min-width:600px; background-color: #fff; padding-left:50px; padding-top:100px; font-family:sans-serif; }</style><div id='overlay'><img src='https://raw.github.com/dormisher/mikehughes/master/title.png'/><input id='password' type='password' /><p id='incorrectMsg'>Incorrect password</p></div>";
+var content = "<style>input#password { padding: 5px 10px; width: 160px; font-size: 14px !important; border:1px solid #000; }p#incorrectMsg { display: none; font-size: 16px; color: red; margin: 10px 0; text-transform:lowercase; }div#overlay { position: absolute; top: 0; left: 0; height: 100%; width: 100%; min-width:600px; background-color: #fff; padding-left:50px; padding-top:100px; font-family:sans-serif; }div#overlay img {width:600px; display:block; margin-left:-20px;}</style><div id='overlay'><img src='https://raw.github.com/dormisher/mikehughes/master/title.png'/><input id='password' type='password' /><p id='incorrectMsg'>Incorrect password</p></div>";
 $('#dScript').after(content);
 
 var key = '#8ae62203-4d9b-4d9e-9a51-1420a52d739f';
