@@ -18,21 +18,17 @@ function hashUrls() {
 };
 
 $(function () {
-	$('#enterPassword').click(function () {
-		if ($('#password').val() == 'archive') {
-			location.hash = key;
-			hashUrls();
-			$('#overlay').fadeOut();
-			$('#incorrectMsg').hide();
-		}
-		else {
-			$('#incorrectMsg').fadeIn();
-		}
-	});
-
 	$('#password').keyup(function (e) {
 		if (e.keyCode == 13) {
-			$('#enterPassword').click();
+			if ($('#password').val() == 'archive') {
+				location.hash = key;
+				hashUrls();
+				$('#overlay').fadeOut();
+				$('#incorrectMsg').hide();
+			}
+			else {
+				$('#incorrectMsg').fadeIn();
+			}
 		}
 	});
 });
