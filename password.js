@@ -15,8 +15,10 @@ function hashUrls() {
 			$(this).attr('href', href);
 		}
 
-		var href = $('h1 a').attr('href') + key;
-		$('h1 a').attr('href', href);
+		if ($('h1 a').attr('href').indexOf(key) != -1) {
+			var href = $('h1 a').attr('href') + key;
+			$('h1 a').attr('href', href);
+		}		
 	});
 };
 
