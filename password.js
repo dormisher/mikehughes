@@ -14,6 +14,9 @@ function hashUrls() {
 			var href = $(this).attr('href') + key;
 			$(this).attr('href', href);
 		}
+
+		var href = $('h1 a').attr('href') + key;
+		$('h1 a').attr('href', href);
 	});
 };
 
